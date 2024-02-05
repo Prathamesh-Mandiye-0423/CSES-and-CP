@@ -3,14 +3,10 @@ using namespace std;
 #define ll long long
 int main(){
   ll n;cin>>n;
-  cout<<n<<" ";
-  while(n!=1){
-    if(n%2==0){
-      n=n/2;
-    }
-    else{
-      n=3*n+1;
-    }
-    cout<<n<<" ";
-  }
+  vector<ll> v(n-1);
+  for(ll i=0;i<n-1;i++) cin>>v[i];
+  ll val=n*(n+1)/2;
+  ll sum=0;
+  for(ll i=0;i<v.size();i++) sum+=v[i];
+  cout<<(val-sum)<<'\n';
 }
