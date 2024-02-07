@@ -1,4 +1,4 @@
-//Increasing array
+//Ferris wheel
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
