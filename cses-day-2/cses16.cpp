@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
-
+//Check Kadane's algo
 int main(){
   ll n;cin>>n;
   vector<ll>x(n);
